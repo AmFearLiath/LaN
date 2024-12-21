@@ -42,7 +42,7 @@ local function isPlayerAuthorized(authData, playerName)
     
     -- Direkte Erlaubnis durch `allowedPlayers`
     for _, allowedPlayer in ipairs(authData.allowedPlayers) do
-        if allowedPlayer == playerName dann
+        if allowedPlayer == playerName then
             print("Authorisierung für Spieler:", playerName, "ist erfolgt")
             return true, {"Direkte Erlaubnis"}
         end
